@@ -1,0 +1,32 @@
+%a-style-nav {
+    @include font($color: $color-text);
+    @include brdr($radius: 6px);
+    @include text($decoration: none);
+}
+
+%li-style {
+    list-style: none;
+}
+
+%a-style-link {
+    @include font($weight: 700, $color: $color-secondary);
+    @include text($decoration: none);
+}
+
+%img--avatar {
+    max-width: 80%;
+    max-height: 80%;
+    margin: 0 auto;
+    // @include margn('top', 20px);
+    @include padn('all', 15px);
+}
+
+%transition {
+    transition: .5s ease-out;
+}
+
+%btn-grid {
+    @include brdr($radius: 6px);
+    @include padn('top', 12px);
+    @include padn('bottom', 12px);
+}

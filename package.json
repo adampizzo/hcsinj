@@ -1,0 +1,23 @@
+{
+  "name": "nucamp-bootstrap-portfolio-project-2",
+  "version": "1.0.0",
+  "description": "Refresh of HCSINJ.com Website.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server",
+    "start": "npm run lite"
+  },
+  "author": "Adam Pizzo",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.3",
+    "bootstrap-social": "^5.1.1"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "sass": "^1.60.0"
+  }
+}

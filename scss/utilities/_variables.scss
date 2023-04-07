@@ -1,0 +1,95 @@
+//Main Layout Colors
+$color-secondary: #4DAAE8; 
+$color-primary: #477F90;
+$color-tertiary: #4AA39D;
+$color-text: #727272;
+$color-white: #fff;
+$color-gray: #e5e5e5;
+//Font
+    //Import
+    @import url('https://fonts.googleapis.com/css?family=Cairo:300,400,700&display=swap');
+$font: 'Cairo', sans-serif;
+
+//Button Colors
+$color-btn: (
+    'default': #51DDFC,
+    'success': #63CC82,
+    'error': #E4757A,
+    'warning': #FD7856,
+    'info': #927BC1,
+);
+
+
+
+//Grid Colors
+$color-grid: (
+    '3': #DEB2EE,
+    '4': #7EE6FD,
+    '5': #88D9A0,
+    '6': #3FABCA,
+    '7': #EC9FA3,
+    '8': #FD9F85,
+    '12': #80E8D1,
+);
+
+//Breakpoints
+$breakpoints: (
+    'sm': 768px,
+    'med': 769px,
+);
+
+.bg-cerulean {
+    background-color: #4DAAE8;
+}
+
+.fc-cerulean {
+    color: #4DAAE8;
+}
+
+.bg-aquafresco {
+    background-color: #4AA39D;
+}
+
+.bg-palegoldenrod {
+    background-color: #eee8a9;
+}
+
+.bg-observatory {
+    background-color: #008e71;
+}
+
+.bg-casual {
+    background-color: #477F90;
+}
+
+.bg-littleboyblue {
+    background-color: #00a6de;
+}
+
+.bg-azure {
+    background-color: #effcff;
+}
+
+.bg-ajirowhite {
+    background-color: #e6f4f1;
+}
+
+.bg-balticgreen {
+    background-color: #369ca2;
+}
+
+.bg-islandmoment {
+    background-color: #40b9a3;
+}
+
+.bg-vangoghgreen {
+    background-color: #6fd397;
+}
+
+.bg-snarkymint {
+    background-color: #aee882;
+}
+
+.bg-witchhazel {
+    background-color: #f9f871;
+}

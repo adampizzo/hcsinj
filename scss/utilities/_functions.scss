@@ -1,0 +1,8 @@
+//Color
+@function color-btn($key) {
+    @return map-get($color-btn, $key);
+}
+
+@function color-grid($key) {
+    @return map-get($color-grid, $key);
+}

@@ -1,0 +1,109 @@
+
+// Border
+@mixin brdr($side: null, $thickness: null, $color: null, $style: null, $radius: null, $radiusAmount: null) {
+    @if $side == 'all' {
+      border: $thickness $color $style;
+    }
+    @else {
+      border#{'-'+$side}: $thickness $color $style;
+    }
+    @if $radius != null {
+        @include roundEdge($radius, $radiusAmount)
+    }
+}
+
+// Border Radius - For rounding
+@mixin roundEdge($side, $amount) {
+    @if $side == 'all' {
+        border-radius: $amount;
+    } @else if $side == 'top' {
+        border-top-left-radius: $amount;
+        border-top-right-radius: $amount;
+    } @else if $side == 'bottom' {
+        border-bottom-left-radius: $amount;
+        border-bottom-right-radius: $amount;
+    } @else if $side == 'left' {
+        border-top-left-radius: $amount;
+        border-bottom-left-radius: $amount;
+    } @else if $side == 'right' {
+        border-top-right-radius: $amount;
+        border-top-left-radius: $amount;
+    } @else if $side == 'top-left' {
+        border-top-left-radius: $amount;
+    } @else if $side == 'top-right' {
+        border-top-right-radius: $amount;
+    } @else if $side == 'bottom-left' {
+        border-bottom-left-radius: $amount;
+    } @else if $side == 'bottom-right' {
+        border-bottom-right-radius: $amount;
+    }
+}
+
+// Margin
+@mixin margn($side, $amount) {
+  @if $side == 'all' {
+    margin: $amount;
+  }
+  @else {
+    margin#{'-'+$side}: $amount;
+  }
+}
+
+//Padding
+@mixin padn($side, $amount) {
+    @if $side == 'all' {
+      padding: $amount;
+    }
+    @else {
+      padding#{'-'+$side}: $amount;
+    }
+}
+
+//Font
+@mixin font($family: null, $color: null, $weight: null, $size: null, $style: null) {
+    font-family: $family;
+    color: $color;
+    font-weight: $weight;  
+    font-size: $size;
+    font-style: $style;
+}
+
+//Text
+@mixin text($align: null, $decoration: null, $height:null) {
+    text-align: $align;
+    text-decoration: $decoration;
+    line-height: $height;
+}
+
+
+
+//Flex Creator
+@mixin flex($disp: flex, $dir: null, $wrap: null, $just: null) {
+    display: $disp;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+    justify-content: $just;
+  }
+
+
+// Media Queries
+@mixin mq($break) {
+
+    $value: map-get($breakpoints, $break);
+    $med: map-get($breakpoints, 'med');
+  
+    @if $value == null {
+      @error "'#{$break}' is not a valid breakpoint name.";
+    }
+  
+    @else if $value < $med {
+      @media (max-width: $value) {
+        @content;
+      }
+    }
+    @else {
+      @media (min-width: $value) {
+        @content;
+      }
+    }
+  }
