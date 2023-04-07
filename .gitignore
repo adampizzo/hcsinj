@@ -125,3 +125,9 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# DS Store Mac
+.DS_Store
+
+# Package-lock
+package-lock.json
