@@ -1,0 +1,22 @@
+#reviews {
+    > div {
+        @include roundEdge(top, $round-regular);
+    }
+}
+
+#reviewsCarousel {
+    .card {
+        margin: 3rem 0 3rem 0;
+    }
+
+    @include roundEdge(bottom, $round-regular);
+}
+
+@media (min-width: 992px) {
+
+        .carousel-inner {
+            max-width: 80%;
+            margin: auto;
+        }
+
+}

@@ -7,7 +7,7 @@ const resizeObserver = new ResizeObserver(entries => {
 
     } else if (entries[0].target.clientWidth < 992) {
         console.log("Width < 992px")
-        
+
         brandImg.setAttribute('width', '48')
     } else {
         console.log("Width > 992px")
@@ -48,3 +48,9 @@ function resizeNav() {
     }
 
 }
+
+// Contact Us Modal
+const contactUs = document.getElementById('contactUs');
+const contactModal = document.getElementById('contactModal');
+
+contactModal.addEventListener('shown.bs.modal', () => myInput.focus())
