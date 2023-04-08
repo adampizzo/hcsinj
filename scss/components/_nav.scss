@@ -17,7 +17,7 @@
 }
 
 #navbarContent {
-    background-color: #e5e5e5;
+    background-color: transparent;
     padding: 1rem 0 1rem 0;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .nav-item {
-    background-color: #fff;
+    background-color: $color-tertiary;
     box-shadow: 5px 5px 13px 0px #000000;
 }
 
@@ -47,6 +47,15 @@
 
 .nav-item-color {
     color: #386371;
+}
+
+.navbar-toggler {
+    margin-right: 3rem;
+    background-color: $color-tertiary;
+    border: 2px solid $color-primary;
+    svg {
+        color: $color-white;
+    }
 }
 
 @media (min-width: 992px) { 

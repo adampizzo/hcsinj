@@ -18,6 +18,7 @@
   },
   "devDependencies": {
     "lite-server": "^2.6.1",
-    "sass": "^1.60.0"
+    "sass": "^1.60.0",
+    "parallelshell": "3.0.1"
   }
 }

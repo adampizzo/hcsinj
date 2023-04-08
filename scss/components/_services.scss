@@ -1,0 +1,30 @@
+.services-header {
+    margin: 2rem 0 2rem 0;
+}
+
+#services {
+    svg {
+        color: $color-tertiary;
+    }
+
+    h2 {
+        color: $color-tertiary;
+        font-weight: 400;
+    }
+    .box {
+        padding-bottom: .5rem;
+    }
+
+    .box:last-child {
+        @include roundEdge(bottom, .375rem);
+    }
+
+    .box:hover {
+        background-color: $color-tertiary;
+        color: $color-white;
+        svg {
+            color: $color-white;
+        }
+    }
+}
+
